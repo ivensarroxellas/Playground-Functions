@@ -22,7 +22,7 @@ function calcArea(base,height) {
 }
 let base = 10;
 let height = 50;
-console.log(calcArea("Área do seu triângulo é"+base,height))
+console.log(calcArea(base,height))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
