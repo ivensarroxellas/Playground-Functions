@@ -14,10 +14,15 @@ let b = elefante
 console.log(compareTrue(a,b))
 
 // Desafio 2
-function calcArea() {
+function calcArea(base,height) {
   // seu código aqui
-}
+  area = (base * height)/2;
+  return area;
 
+}
+let base = 10;
+let height = 50;
+console.log(calcArea("Área do seu triângulo é"+base,height))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
