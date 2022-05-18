@@ -71,11 +71,19 @@ let arrayCount = [1, 9, 2, 3, 9, 5, 7];
 console.log(highestCount(arrayCount));
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
+  let trombar = "Os gatos se trombam e rato foge"
 
+  if (Math.abs(mouse-cat1) < Math.abs(mouse-cat2)) {
+    return cat1
+  }  else if (Math.abs(mouse-cat1) > Math.abs(mouse-cat2)){
+    return cat2
+  } else {
+    return trombar
+  }
 }
-
+console.log(catAndMouse(5,4,6));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
