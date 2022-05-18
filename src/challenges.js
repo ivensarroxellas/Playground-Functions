@@ -75,13 +75,13 @@ function catAndMouse(mouse,cat1,cat2) {
     // seu código aqui
   let distanciacat1 = Math.abs(mouse-cat1)
   let distanciacat2 = Math.abs(mouse-cat2)
-
+  let trombar = "os gatos trombam e o rato foge"
   if (distanciacat1 < distanciacat2) {
     return "cat1";
   }  else if (distanciacat1 > distanciacat2){
     return "cat2";
   } else {
-    return "os gatos trombam e o rato foge";
+    return trombar;
  }
 }
 
