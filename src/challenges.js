@@ -11,7 +11,6 @@ const elefante = true;
 const macaco = false;
 let a = girafa
 let b = elefante
-console.log(compareTrue(a,b))
 
 // Desafio 2
 function calcArea(base,height) {
@@ -22,7 +21,6 @@ function calcArea(base,height) {
 }
 let base = 10;
 let height = 50;
-console.log(calcArea(base,height))
 
 // Desafio 3
 function splitSentence(str) {
@@ -31,7 +29,6 @@ function splitSentence(str) {
   return strFrag
 }
 str = "vamos que vamos"
-console.log(splitSentence(str));
 
 // Desafio 4
 function concatName(arr) {
@@ -39,8 +36,6 @@ function concatName(arr) {
   let ultimo  = (arr[arr.length-1]+", "+arr[0]);
   return ultimo;
 }
-arr = ["Lucas", "Jorginho", "José", "Paulo"]
-console.log(concatName(arr));
 
 // Desafio 5
 function footballPoints(wins,ties) {
@@ -50,7 +45,6 @@ function footballPoints(wins,ties) {
   let points = winsPoints + tiesPoints
   return points;
 }
-  console.log(footballPoints(14,8)) 
 
 // Desafio 6
 function highestCount(arrayCount) {
@@ -67,8 +61,6 @@ function highestCount(arrayCount) {
    } 
   return contador
  }
-let arrayCount = [1, 9, 2, 3, 9, 5, 7];
-console.log(highestCount(arrayCount));
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
@@ -83,7 +75,6 @@ if (Math.abs(mouse-cat1) < Math.abs(mouse-cat2)) {
   return trombar;
 }
 }
-console.log(catAndMouse(4,1,3));
 
 // Desafio 8
 function fizzBuzz(arrayFizz) {
@@ -103,21 +94,52 @@ for (let fizz  = 0; fizz < arrayFizz.length; fizz += 1){
 }
 return fizzBuzz
 }
-let  arrayFizz = [2, 15, 7, 9, 45];
-console.log(fizzBuzz(arrayFizz));
+
 // Desafio 9
-function encode() {
+function encode(fraseEncode) {
   // seu código aqui
+let fraseEncodeFrag = fraseEncode.split("");
+for (let i = 0; i < fraseEncode.length; i += 1) {
+  if (fraseEncodeFrag[i] === "a"){
+    fraseEncodeFrag[i] = "1";
+  } else if(fraseEncodeFrag[i] === "e"){
+    fraseEncodeFrag[i] = "2";
+  } else if(fraseEncodeFrag[i] === "i"){
+    fraseEncodeFrag[i] = "3";
+  } else if(fraseEncodeFrag[i] === "o"){
+      fraseEncodeFrag[i] = "4";
+  } else if(fraseEncodeFrag[i] === "u"){
+    fraseEncodeFrag[i] = "5";
+  }  
 }
-function decode() {
+fraseEncode = fraseEncodeFrag.join("");
+return fraseEncode
+}
+
+function decode(fraseDecode) {
   // seu código aqui
+fraseDecodeFrag = fraseDecode.split("");
+for (let i = 0; i < fraseDecode.length; i += 1) {
+  if (fraseDecodeFrag[i] === "1"){
+    fraseDecodeFrag[i] = "a";
+  } else if(fraseDecodeFrag[i] === "2"){
+    fraseDecodeFrag[i] = "e";
+  } else if(fraseDecodeFrag[i] === "3"){
+    fraseDecodeFrag[i] = "i";
+  } else if(fraseDecodeFrag[i] === "4"){
+    fraseDecodeFrag[i] = "o";
+  } else if(fraseDecodeFrag[i] === "5"){
+    fraseDecodeFrag[i] = "u";
+  }  
+}
+fraseDecode = fraseDecodeFrag.join("");
+return fraseDecode
 }
 
 // Desafio 10
 function techList() {
   // seu código aqui
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
