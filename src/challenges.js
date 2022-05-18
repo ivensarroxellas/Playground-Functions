@@ -137,9 +137,22 @@ return fraseDecode
 }
 
 // Desafio 10
-function techList() {
+function techList(arrayTec,stringTec) {
   // seu código aqui
+arrayTec = arrayTec.sort()
+if (arrayTec != ""){  
+  for (let key in arrayTec){
+    arrayTec[key] = {
+      tech: arrayTec[key],
+      name: stringTec
+    }
+  }
+}else {
+  return "Vazio!"
 }
+return arrayTec
+}
+
 module.exports = {
   calcArea,
   catAndMouse,
