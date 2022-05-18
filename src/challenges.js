@@ -67,12 +67,13 @@ function highestCount(arrayCount) {
    } 
   return contador
  }
-let arrayCount = [9, 1, 2, 3, 9, 5, 7];
+let arrayCount = [1, 9, 2, 3, 9, 5, 7];
 console.log(highestCount(arrayCount));
 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
+
 }
 
 // Desafio 8
