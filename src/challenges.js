@@ -43,9 +43,14 @@ arr = ["Lucas", "Jorginho", "José", "Paulo"]
 console.log(concatName(arr));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
+  winsPoints = wins * 3;
+  tiesPoints = ties * 1;
+  let points = winsPoints + tiesPoints
+  return points;
 }
+  console.log(footballPoints(14,8)) 
 
 // Desafio 6
 function highestCount() {
