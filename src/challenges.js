@@ -72,18 +72,20 @@ console.log(highestCount(arrayCount));
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
-  // seu código aqui
-  let trombar = "Os gatos se trombam e rato foge"
+    // seu código aqui
+  let distanciacat1 = Math.abs(mouse-cat1)
+  let distanciacat2 = Math.abs(mouse-cat2)
 
-  if (Math.abs(mouse-cat1) < Math.abs(mouse-cat2)) {
-    return cat1
-  }  else if (Math.abs(mouse-cat1) > Math.abs(mouse-cat2)){
-    return cat2
+  if (distanciacat1 < distanciacat2) {
+    return "cat1";
+  }  else if (distanciacat1 > distanciacat2){
+    return "cat2";
   } else {
-    return trombar
-  }
+    return "os gatos trombam e o rato foge";
+ }
 }
-console.log(catAndMouse(5,4,6));
+
+console.log(catAndMouse(4,1,3));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
