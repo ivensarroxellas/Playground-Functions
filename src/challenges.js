@@ -34,9 +34,13 @@ str = "vamos que vamos"
 console.log(splitSentence(str));
 
 // Desafio 4
-function concatName() {
+function concatName(arr) {
   // seu código aqui
+  let ultimo  = (arr[arr.length-1]+", "+arr[0]);
+  return ultimo;
 }
+arr = ["Lucas", "Jorginho", "José", "Paulo"]
+console.log(concatName(arr));
 
 // Desafio 5
 function footballPoints() {
